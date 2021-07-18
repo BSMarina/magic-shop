@@ -1,0 +1,854 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  margin: 0;
+}
+
+.vollk {
+  font-family: Vollkorn, serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(252, 240, 228);
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+}
+
+.header-text {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  color: rgb(91, 49, 87);
+  font-weight: bold;
+}
+
+.header-text p {
+  margin: 5px 0px;
+  margin-right: 30px;
+}
+
+.link-header {
+  color: rgb(91, 49, 87);
+  text-decoration: none;
+}
+
+.link-header:hover {
+  color: rgb(91, 49, 87);
+  text-decoration: underline;
+}
+
+img {
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+#tela-inicial {
+  background-image: url("/assets/mask.jpg");
+  background-color: rgb(79, 32, 68);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.tela-inicial-container {
+  max-width: 1120px;
+  align-items: center;
+  text-align: center;
+  color: rgb(252, 240, 228);
+}
+
+.card-container {
+  border: transparent;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-signo a {
+  margin: 10px;
+  height: 165px;
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  font-size: 18px;
+  color: rgb(252, 240, 228);
+  text-decoration: none;
+}
+
+.card-signo a:hover {
+  background-color: rgb(252, 240, 228);
+  color: rgb(91, 49, 87);
+  border-radius: 20px;
+}
+
+.card-signo img {
+  margin-bottom: 10px;
+}
+
+.card-signo a:hover path {
+  fill: rgb(91, 49, 87);
+}
+
+.tela-inicial-container p {
+  font-size: 2em;
+  margin: 60px 0px 30px;
+}
+
+.botao-inicial {
+  display: flex;
+  margin: 0px auto;
+  max-width: 540px;
+  height: 80px;
+  background-color: rgb(164, 115, 147);
+  border-radius: 20px;
+  font-size: 22px;
+  color: rgb(252, 240, 228);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid rgb(91, 49, 87);
+}
+
+.botao-inicial:hover {
+  display: flex;
+  margin: 0px auto;
+  max-width: 540px;
+  height: 80px;
+  background-color: rgb(252, 240, 228);
+  color: rgb(91, 49, 87);
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PÃ¡ginas dos signos*/
+
+h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 114px;
+  line-height: 114px;
+  text-align: left;
+  letter-spacing: -4px;
+  margin: 0;
+  padding: 0;
+}
+
+.botao-voltar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  max-width: 540px;
+  height: 60px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.botao-voltar:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  color: rgb(91, 49, 87);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.texto-signos {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 540px;
+  margin: auto;
+  width: 100%;
+}
+
+.secao {
+  background-image: url("/assets/mask.jpg");
+  background-blend-mode: multiply;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.botao:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  max-width: 500px;
+  width: 100%;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/*Ãries*/
+.secao#signo-aries {
+  background-color: rgb(250, 132, 36);
+}
+
+#signo-aries h2 {
+  color: rgb(255, 216, 119);
+}
+
+#signo-aries h3 {
+  color: rgb(255, 216, 119);
+}
+
+.texto-aries {
+  color: rgb(142, 38, 13);
+}
+
+.botao.botao-aries {
+  border-color: rgb(255, 216, 119);
+  color: rgb(255, 216, 119);
+}
+
+.botao-aries:hover {
+  background-color: rgb(255, 216, 119);
+  color: rgb(250, 132, 36);
+}
+
+/*Touro*/
+.secao#signo-touro {
+  background-color: rgb(211, 170, 176);
+}
+
+#signo-touro h2 {
+  color: rgb(226, 208, 224);
+}
+#signo-touro h3 {
+  color: rgb(226, 208, 224);
+}
+
+.texto-touro {
+  color: rgb(174, 115, 117);
+}
+
+.botao.botao-touro {
+  border-color: rgb(226, 208, 224);
+  color: rgb(226, 208, 224);
+}
+
+.botao-touro:hover {
+  background-color: rgb(226, 208, 224);
+  color: rgb(211, 170, 176);
+}
+
+/*Gemeos*/
+.secao#signo-gemeos {
+  background-color: rgb(171, 139, 66);
+}
+
+#signo-gemeos h2 {
+  color: rgb(96, 65, 18);
+}
+#signo-gemeos h3 {
+  color: rgb(96, 65, 18);
+}
+
+.texto-gemeos {
+  color: rgb(255, 242, 130);
+}
+
+.botao.botao-gemeos {
+  border-color: rgb(96, 65, 18);
+  color: rgb(96, 65, 18);
+}
+
+.botao-gemeos:hover {
+  background-color: rgb(96, 65, 18);
+  color: rgb(171, 139, 66);
+}
+
+/*Cancer*/
+.secao#signo-cancer {
+  background-color: rgb(178, 115, 108);
+}
+
+#signo-cancer h2 {
+  color: rgb(254, 207, 201);
+}
+
+#signo-cancer h3 {
+  color: rgb(254, 207, 201);
+}
+
+.texto-cancer {
+  color: rgb(98, 63, 57);
+}
+
+.botao.botao-cancer {
+  border-color: rgb(254, 207, 201);
+  color: rgb(254, 207, 201);
+}
+
+.botao-cancer:hover {
+  background-color: rgb(254, 207, 201);
+  color: rgb(178, 115, 108);
+}
+
+/*Leao*/
+.secao#signo-leao {
+  background-color: rgb(86, 86, 94);
+}
+
+#signo-leao h2 {
+  color: rgb(248, 248, 248);
+}
+
+#signo-leao h3 {
+  color: rgb(248, 248, 248);
+}
+
+.texto-leao {
+  color: rgb(227, 203, 159);
+}
+
+.botao.botao-leao {
+  border-color: rgb(248, 248, 248);
+  color: rgb(248, 248, 248);
+}
+
+.botao-leao:hover {
+  background-color: rgb(248, 248, 248);
+  color: rgb(86, 86, 94);
+}
+
+/*Virgem*/
+.secao#signo-virgem {
+  background-color: rgb(154, 210, 202);
+}
+
+#signo-virgem h2 {
+  color: rgb(222, 243, 248);
+}
+
+#signo-virgem h3 {
+  color: rgb(222, 243, 248);
+}
+
+.texto-virgem {
+  color: rgb(64, 104, 80);
+}
+
+.botao.botao-virgem {
+  border-color: rgb(64, 104, 80);
+  color: rgb(64, 104, 80);
+}
+
+.botao-virgem:hover {
+  background-color: rgb(64, 104, 80);
+  color: rgb(154, 210, 202);
+}
+
+/*Libra*/
+.secao#signo-libra {
+  background-color: rgb(228, 123, 126);
+}
+
+#signo-libra h2 {
+  color: rgb(255, 171, 169);
+}
+#signo-libra h3 {
+  color: rgb(255, 171, 169);
+}
+
+.texto-libra {
+  color: rgb(135, 26, 29);
+}
+
+.botao.botao-libra {
+  border-color: rgb(255, 171, 169);
+  color: rgb(255, 171, 169);
+}
+
+.botao-libra:hover {
+  background-color: rgb(255, 171, 169);
+  color: rgb(228, 123, 126);
+}
+
+/*Escorpiao*/
+.secao#signo-escorpiao {
+  background-color: rgb(74, 45, 38);
+}
+
+#signo-escorpiao h2 {
+  color: rgb(229, 97, 39);
+}
+
+#signo-escorpiao h3 {
+  color: rgb(229, 97, 39);
+}
+
+.texto-escorpiao {
+  color: rgb(234, 150, 88);
+}
+
+.botao.botao-escorpiao {
+  border-color: rgb(229, 97, 39);
+  color: rgb(229, 97, 39);
+}
+
+.botao-escorpiao:hover {
+  background-color: rgb(229, 97, 39);
+  color: rgb(74, 45, 38);
+}
+
+/*Sagitario*/
+.secao#signo-sagitario {
+  background-color: rgb(39, 55, 75);
+}
+
+#signo-sagitario h2 {
+  color: rgb(214, 192, 164);
+}
+
+#signo-sagitario h3 {
+  color: rgb(214, 192, 164);
+}
+
+.texto-sagitario {
+  color: rgb(130, 149, 183);
+}
+
+.botao.botao-sagitario {
+  border-color: rgb(214, 192, 164);
+  color: rgb(214, 192, 164);
+}
+
+.botao-sagitario:hover {
+  background-color: rgb(214, 192, 164);
+  color: rgb(39, 55, 75);
+}
+
+/*Capricornio*/
+.secao#signo-capricornio {
+  background-color: rgb(26, 27, 29);
+}
+
+#signo-capricornio h2 {
+  color: rgb(226, 201, 144);
+}
+
+#signo-capricornio h3 {
+  color: rgb(226, 201, 144);
+}
+
+.texto-capricornio {
+  color: rgb(171, 134, 81);
+}
+
+.botao.botao-capricornio {
+  border-color: rgb(226, 201, 144);
+  color: rgb(226, 201, 144);
+}
+
+.botao-capricornio:hover {
+  background-color: rgb(226, 201, 144);
+  color: rgb(26, 27, 29);
+}
+
+/*Aquario*/
+.secao#signo-aquario {
+  background-color: rgb(25, 70, 160);
+}
+
+#signo-aquario h2 {
+  color: rgb(225, 241, 255);
+}
+
+#signo-aquario h3 {
+  color: rgb(225, 241, 255);
+}
+
+.texto-aquario {
+  color: rgb(193, 229, 255);
+}
+
+.botao.botao-aquario {
+  border-color: rgb(225, 241, 255);
+  color: rgb(225, 241, 255);
+}
+
+.botao.botao-aquario:hover {
+  background-color: rgb(225, 241, 255);
+  color: rgb(25, 70, 160);
+}
+
+/*Peixes*/
+.secao#signo-peixes {
+  background-color: rgb(123, 69, 124);
+}
+
+#signo-peixes h2 {
+  color: rgb(213, 204, 223);
+}
+#signo-peixes h3 {
+  color: rgb(213, 204, 223);
+}
+
+.texto-peixes {
+  color: rgb(199, 174, 196);
+}
+
+.botao.botao-peixes {
+  border-color: rgb(213, 204, 223);
+  color: rgb(213, 204, 223);
+}
+
+.botao.botao-peixes:hover {
+  background-color: rgb(213, 204, 223);
+  color: rgb(123, 69, 124);
+}
+
+.secao#tela-cadastro {
+  background-color: rgb(252, 240, 228);
+}
+
+h4 {
+  color: rgb(91, 49, 87);
+  font-size: 64px;
+  margin: 50px 0;
+}
+.tela-cadastro-container {
+  max-width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.form-container {
+  display: grid;
+  max-width: 540px;
+}
+#nome {
+  width: 100%;
+  height: 83px;
+  margin: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(91, 49, 87);
+  text-align: center;
+  background-color: rgb(244, 232, 221);
+  border-radius: 20px;
+  border-color: transparent;
+}
+#email {
+  width: 100%;
+  height: 83px;
+  margin: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(91, 49, 87);
+  text-align: center;
+  background-color: rgb(244, 232, 221);
+  border-radius: 20px;
+  border-color: transparent;
+}
+#cadastrar {
+  width: 100%;
+  height: 83px;
+  margin: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(244, 232, 221);
+  text-align: center;
+  background-color: rgb(91, 49, 87);
+  border-radius: 20px;
+  border-color: transparent;
+}
+#cadastrar:hover {
+  width: 100%;
+  height: 83px;
+  margin: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  border: 2px solid rgb(91, 49, 87);
+  background-color: rgb(244, 232, 221);
+  text-align: center;
+  color: rgb(91, 49, 87);
+  border-radius: 20px;
+}
+#content {
+  font-family: "Exo 2", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(91, 49, 87);
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.botao-voltar-final {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(91, 49, 87, 0.6);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.botao-voltar-final:hover {
+  text-decoration: underline;
+  font-size: 20px;
+  color: rgba(91, 49, 87, 0.6);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  height: 120px;
+  width: 100%;
+  padding: 15px 0;
+  color: rgb(252, 240, 228);
+  background-color: rgb(91, 49, 87);
+  font-size: 16px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: rgb(252, 240, 228);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.container-padding {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 1399.98px) {  }
+
+@media (max-width: 1199.98px) { h3 {font-size: 80px;} 
+.container-padding {padding: 0 60px;}
+}
+
+
+
+@media (min-width: 991.99px) {
+  .secao:nth-child(even) .texto-signos {padding-right: 90px;}
+  .secao:nth-child(odd) .texto-signos {padding-left: 90px;}
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .container-padding {padding:0 60px;
+  flex-direction: column;
+align-items: center;}
+  .container img {
+    order: 1;
+  }
+  .container .texto-signos {
+    order: 2;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: -30px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 64px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .container-padding {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px;
+  }
+
+    .texto-signos {
+      max-width: 100%;
+    }
+
+    .botao {
+      max-width: 100%;
+    }
+
+    .botao-voltar {max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+
+  .card-signo a {
+    width: 105px;
+    height: 105px;
+  }
+
+  .card-signo a svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .botao {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .botao:hover {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .container img {
+    max-width: 75%;
+    margin: auto;
+    align-self: center;
+    display: flex;
+  }
+
+  
+  .botao-voltar {
+    font-size: 16px;
+  }
+
+  .botao-voltar:hover {
+    font-size: 16px;}
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 55px;
+    line-height: 1.1em;
+  }
+
+  h4 {
+    font-size: 42px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .container-padding {
+    padding: 0 35px;
+    flex-direction: column;
+    display: flex;
+  }
+
+
+  #form input {
+    margin: 10px 0;
+  }
+
+}
