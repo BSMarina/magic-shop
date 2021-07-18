@@ -1,0 +1,1 @@
+Landing page criada para o desafio 1 do programa Hiring Coders #2.
